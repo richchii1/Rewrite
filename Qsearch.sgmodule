@@ -129,7 +129,7 @@
 #>>>>>>>>>>>>>>>>>>>>>>>搜索
 # gg  xxx (谷歌搜索)
 ^https:\/\/duckduckgo.com\/\?q=gg\+([^&]+).+ url 302 https://www.google.com/search?q=$1
-^https:\/\/duckduckgo.com\/\?q=((.(?!bd))+)\+gg.+ url 302 https://www.google.com/search?q=$1
+^https:\/\/duckduckgo.com\/\?q=([^+]+)\+)\+gg.+ url 302 https://www.google.com/search?q=$1
 # wk  xxx (维基搜索)
 ^https:\/\/duckduckgo.com\/\?q=wk\+([^&]+).+ url 302 https://zh.wikipedia.org/wiki/$1
 ^https:\/\/duckduckgo.com\/\?q=([^+]+)\+wk.+ url 302 https://zh.wikipedia.org/wiki/$1
