@@ -40,7 +40,7 @@
 ^https:\/\/duckduckgo.com\/\?q=bi\+([^&]+).+ https://cn.bing.com/search?q=$1 302
 
 # gg (谷歌)
-^https:\/\/duckduckgo.com\/\?q=([^&]+).+ https://www.google.com/search?q=$1 302
+^https:\/\/duckduckgo.com\/\?q=gg\+([^&]+).+ https://www.google.com/search?q=$1 302
 
 # ccn (App Store 临时换至中国区)
 ^https:\/\/duckduckgo.com\/\?q=ccn&.+ https://itunes.apple.com/WebObjects/MZStore.woa/wa/resetAndRedirect?dsf=143465&mt=8&url=/WebObjects/MZStore.woa/wa/viewSoftware?mt=8&id=1108187390&cc=cn&urlDesc= 302
@@ -52,7 +52,7 @@
 ^https:\/\/duckduckgo.com\/\?q=ddg\+([^&]+).+ https://duckduckgo.com/?ia=about&q=$1 302
 
 # 无指令 (百度)
-^https:\/\/duckduckgo.com\/\?q=bd\+([^&]+).+ https://www.baidu.com/s?wd=$1 302
+^https:\/\/duckduckgo.com\/\?q=([^&]+).+ https://www.baidu.com/s?wd=$1 302
 
 [MITM]
 hostname = %APPEND% duckduckgo.com
